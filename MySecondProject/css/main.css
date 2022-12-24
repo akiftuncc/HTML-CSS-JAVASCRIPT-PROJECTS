@@ -1,0 +1,419 @@
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            
+            html {
+                font-family: "Open Sans", "sans-serif";
+                font-size: 62.5%;
+                background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.534) 0%, #000 100%);
+            }
+            
+            .heading-small {
+                font-size: 2rem;
+            }
+            
+            .heading-medium {
+                font-size: 3rem;
+            }
+            
+            .heading-big {
+                font-size: 3.8rem;
+            }
+            
+            .heading-xbig {
+                font-size: 5rem;
+            }
+            
+            .heading-xxbig {
+                font-size: 8rem;
+            }
+            
+            .container {
+                max-width: 140rem;
+                margin: 0 auto;
+            }
+            
+            .hidden {
+                visibility: hidden;
+            }
+            /* NAVBAR */
+            
+            #navbar {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            
+            #navbar a {
+                color: #fff;
+                text-decoration: none;
+            }
+            
+            #navbar ul {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                list-style: none;
+            }
+            
+            #navbar ul li {
+                padding: 0 1rem;
+            }
+            
+            .astrology-header {
+                z-index: 500;
+                background-size: cover;
+                padding: 1rem 1rem;
+                background-color: #000000;
+                overflow: hidden;
+                position: fixed;
+                top: 0;
+                width: 100%;
+            }
+            
+            #navbar ul li a:hover {
+                color: #5c8dc5;
+                transition: all 0.5s ease;
+            }
+            /* VIDEOLU BAŞLIK IÇIN*/
+            
+            .showcase {
+                width: 100%;
+                position: relative;
+            }
+            
+            .showcase video {
+                width: 99%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                object-fit: cover;
+            }
+            
+            .title {
+                width: 100%;
+                height: 100%;
+                background-color: #000000;
+                color: #fff;
+                mix-blend-mode: multiply;
+                padding-top: 1rem;
+                font-size: 7rem;
+                font-family: 'Tangerine', cursive;
+                font-weight: bolder;
+            }
+            /* 1. KISIM */
+            
+            .main {
+                padding: 2rem 10rem;
+            }
+            
+            .main__container {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                align-items: center;
+                justify-self: center;
+                margin: 0 auto;
+                height: 90vh;
+                background-color: transparent;
+                z-index: 1;
+                width: 100%;
+                max-width: 160rem;
+                padding: 0 50px;
+                border-radius: 15rem;
+            }
+            
+            .main__content h1 {
+                font-size: 8rem;
+                background-color: #ff8177;
+                background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+                background-size: 100%;
+                -webkit-background-clip: text;
+                -moz-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                -moz-text-fill-color: transparent;
+            }
+            
+            .main__content h2 {
+                font-size: 8rem;
+                background-color: #ff8177;
+                background-image: linear-gradient(to top, #b721ff 0%, #21d4fd 100%);
+                background-size: 100%;
+                -webkit-background-clip: text;
+                -moz-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                -moz-text-fill-color: transparent;
+            }
+            
+            .main__content p {
+                margin-top: 1rem;
+                font-size: 3rem;
+                font-weight: 700;
+                color: black;
+            }
+            
+            .main__btn {
+                font-size: 2rem;
+                background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
+                padding: 1.5rem 5rem;
+                border: none;
+                border-radius: 4px;
+                color: #fff;
+                margin-top: 2rem;
+                cursor: pointer;
+                position: relative;
+                transition: all 0.35s;
+                outline: none;
+                transform-origin: 0 0;
+                transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+            }
+            
+            .main__btn a {
+                position: relative;
+                z-index: 2;
+                color: #fff;
+                text-decoration: none;
+            }
+            
+            .main__btn:after {
+                position: absolute;
+                content: "";
+                top: 0;
+                left: 0;
+                width: 0;
+                height: 100%;
+                background-image: linear-gradient(to top, #b721ff 0%, #21d4fd 100%);
+                transition: all 0.55s;
+                border-radius: 4px;
+            }
+            
+            .main__btn:hover {
+                color: #fff;
+            }
+            
+            .main__btn:hover:after {
+                width: 100%;
+            }
+            
+            .main__img--container {
+                text-align: center;
+            }
+            
+            #main__img {
+                height: 120%;
+                width: 100%;
+            }
+            /* 2. KISIM */
+            
+            .portfolio-heading h2 {
+                text-align: center;
+                margin: 2rem 0;
+                font-family: 'Permanent Marker', cursive;
+            }
+            
+            .portfolio-line {
+                opacity: 0.5;
+            }
+            
+            .burc-resimler ul {
+                padding-left: 3rem;
+            }
+            
+            .burc-resimler ul li {
+                list-style: none;
+                float: left;
+                width: 16.6%;
+                text-align: center;
+                margin-top: 5rem;
+            }
+            
+            .burc-resimler ul li a img {
+                width: 18rem;
+                opacity: 0.8;
+            }
+            
+            .burc-resimler ul li a {
+                text-decoration: none;
+                color: #000;
+            }
+            
+            .burc-resimler ul li a img:hover {
+                transition: all 0.7s ease;
+                opacity: 1;
+                transform: scale(1.1);
+            }
+            
+            .empty-block {
+                height: 60rem;
+            }
+            /* 3. KISIM (HAKKIMDA) */
+            
+            .container-hakkimda {
+                margin-top: 8rem;
+            }
+            
+            .hakkimda-heading h2 {
+                max-width: 110rem;
+                margin: 3rem auto;
+                text-align: right;
+                font-family: 'Amatic SC', cursive;
+                color: #fff;
+            }
+            
+            .hakkimda-text-img {
+                display: flex;
+                align-items: center;
+            }
+            
+            .hakkimda-text-img .text {
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .hakkimda-text-img .text pre {
+                font-size: 300%;
+                color: #fff;
+            }
+            
+            .hakkimda-text-img .img img {
+                border-radius: 2rem;
+                opacity: 0.85;
+            }
+            
+            .hakkimda-text-img .img img:hover {
+                opacity: 1;
+                transition: all 0.7s ease;
+                transform: scale(1.1);
+            }
+            
+            .hakkimda-buttons {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                color: #fff;
+            }
+            
+            .hakkimda-button1 {
+                padding-right: 50rem;
+            }
+            
+            .hakkimda-buttons a {
+                color: #fff;
+            }
+            
+            .hakkimda-button1 a h4:hover {
+                color: #d81751;
+                transition: all 0.4s ease;
+                font-size: 3.3rem;
+            }
+            
+            .hakkimda-button1 a:hover {
+                color: #5A39B2;
+                transition: all 0.4s ease;
+                font-size: 3.3rem;
+            }
+            
+            .hakkimda-button2 a:hover {
+                color: #5A39B2;
+                transition: all 0.4s ease;
+                font-size: 3.3rem;
+            }
+            
+            .hakkimda-button2 a h4:hover {
+                color: #d81751;
+                transition: all 0.4s ease;
+                font-size: 3.3rem;
+            }
+            
+            .empty-block1 {
+                height: 1rem;
+            }
+            /* 4. KISIM CARDS */
+            
+            .cards-section {
+                display: flex;
+                justify-content: center;
+                height: auto;
+                align-items: center;
+            }
+            
+            .container-cards {
+                display: flex;
+            }
+            
+            .container-cards a {
+                text-decoration: none;
+            }
+            
+            .cards-section .card {
+                height: 35rem;
+                margin: 4rem;
+                box-shadow: 5px 5px 20px black;
+                overflow: hidden;
+            }
+            
+            .cards-section img {
+                height: 35rem;
+                width: 24.5rem;
+                border-radius: 0.3rem;
+                transition: all 0.5s;
+            }
+            
+            .cards-section .intro {
+                height: auto;
+                width: 24.5rem;
+                padding: 0.6rem;
+                box-sizing: border-box;
+                position: relative;
+                background: rgb(27, 27, 27, .7);
+                color: white;
+                bottom: 10rem;
+                transition: 0.5s;
+            }
+            
+            .cards-section h1 {
+                margin: 1rem;
+                font-size: 3rem;
+            }
+            
+            .cards-section p {
+                font-size: 1.5rem;
+                margin: 2rem;
+                visibility: hidden;
+                opacity: 0;
+            }
+            
+            .cards-section span {
+                font-weight: bold;
+            }
+            
+            .cards-section .card:hover {
+                cursor: pointer;
+            }
+            
+            .cards-section .card:hover .intro {
+                height: 24rem;
+                bottom: 24rem;
+                background: black;
+                opacity: 0.8;
+            }
+            
+            .cards-section .card:hover p {
+                opacity: 1;
+                visibility: visible;
+            }
+            
+            .cards-section .card:hover img {
+                transform: scale(1.1) rotate(-3deg);
+            }
+            
+            .cards-hr {
+                opacity: 0.5;
+                margin-top: 7rem;
+                margin-bottom: 5rem;
+            }
+            /* TABLET BOYUTLANDIRMA */

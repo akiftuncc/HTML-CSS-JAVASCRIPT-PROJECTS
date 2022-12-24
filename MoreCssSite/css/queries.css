@@ -1,0 +1,113 @@
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (max-width: 1200px) {
+    html {
+        font-size: 56.25%;
+    }
+    .navbar-nav {
+        padding: 2rem 4rem;
+    }
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (max-width: 992px) {
+    html {
+        font-size: 50%;
+    }
+    .hero-title {
+        font-size: 4.4rem;
+        max-width: 100%;
+    }
+    .hero-text {
+        font-size: 2rem;
+    }
+    .statics-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .features-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .pricing-card--front {
+        padding: 5rem;
+    }
+    .logo {
+        height: 2.5rem;
+    }
+    .testimonials-text {
+        font-size: 1.8rem;
+    }
+    .testimonials-author {
+        font-size: 1.6rem;
+    }
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (max-width: 768px) {
+    .footer-content-box {
+        grid-template-columns: 1fr;
+    }
+    .testimonials-text {
+        font-size: 1.4rem;
+    }
+    .testimonials-author {
+        font-size: 1.2rem;
+    }
+    .testimonial-img {
+        height: 80%;
+    }
+    .hero-text {
+        font-size: 1.6rem;
+    }
+    .pricing-card--front {
+        padding: 2rem;
+    }
+    .questions-title {
+        font-size: 3.6rem;
+    }
+    .questions-text {
+        font-size: 1.4rem;
+    }
+    .question-box {
+        padding: 2rem;
+    }
+    .questions-container {
+        flex-direction: column;
+    }
+    .question {
+        font-size: 1.4rem;
+    }
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 600px) {
+    .nav-content-1 {
+        display: none;
+    }
+    .hidden .nav-list {
+        display: none;
+        grid-template-columns: (4, 1fr);
+        padding: 2rem 0rem;
+        background-color: #322e47;
+        background-image: linear-gradient(to bottom, #322e47 0%, #4d475c 100%);
+        text-align: center;
+        z-index: 999;
+        border-radius: 2rem;
+        position: absolute;
+        top: 2rem;
+        left: -7rem;
+        width: 15rem;
+    }
+    .hidden {
+        display: grid;
+        position: relative;
+    }
+}

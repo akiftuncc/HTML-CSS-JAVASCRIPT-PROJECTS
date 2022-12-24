@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <h1 class="baslik">COMMENT PAGE</h1>
+
+    <div class="comments">
+        <div class="container">
+            <div class="comment">
+                <h2 class="comment-h2">Make Comments!</h2>
+
+                <div class="form-div">
+                    <form>
+                        <div class="cont">
+                            <label for="fname"></label>
+                            <input type="text" id="fname" name="fname" placeholder="Name" />
+                            <label for="lname"></label>
+                            <input type="text" id="lname" name="lname" placeholder="Surname" />
+                        </div>
+                        <label for="comment"><h4 class="yorum-h4">Your Comment</h4></label
+              >
+
+              <textarea
+                id="comment"
+                placeholder="Write your comment here"
+                rows="5"
+                cols="50"
+                name="comment"
+                form="usrform"
+              ></textarea>
+              <div class="buttons">
+                <div class="btn">
+                  <button id="addBtn" type="button" class="button">
+                    GÖNDER
+                  </button>
+                </div>
+                <div class="btn">
+                  <button id="clrBtn" class="button">SİL</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section>
+      <div class="container">
+        <ul>
+          <li class="hidden">
+            <div class="section-div">
+              <div class="section-name">
+                <h5></h5>
+              </div>
+              <div class="section-surname">
+                <h5></h5>
+              </div>
+            </div>
+            <div class="section-comment">
+              <h6></h6>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

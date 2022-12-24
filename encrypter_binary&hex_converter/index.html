@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <h1 class="nav-header">Ako's All in One Page</h1>
+            </nav>
+        </div>
+    </header>
+
+    <section class="container">
+        <div class="languages">
+            <div class="language">
+                <button id="turkish-btn">Türkçe</button>
+            </div>
+            <div class="language">
+                <button id="english-btn">English</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <article>
+            <h1 class="binary-heading">Binary Calculator</h1>
+            <div class="buttons-binary">
+                <button class="binaryNumber" id="binary-to-num">
+            Binary to Number
+          </button>
+                <button class="binaryNumber" id="num-to-binary">
+            Number to Binary
+          </button>
+            </div>
+            <div class="binary-to-number"></div>
+        </article>
+
+        <article>
+            <h1 class="binary-heading">Hex Calculator</h1>
+            <div class="buttons-binary">
+                <button class="binaryNumber" id="hex-to-num">Hex to Number</button>
+                <button class="binaryNumber" id="num-to-hex">Number to Hex</button>
+            </div>
+            <div class="binary-to-number"></div>
+        </article>
+
+        <article>
+            <h1 class="binary-heading">Encrypted Message</h1>
+            <div class="buttons-binary">
+                <button class="binaryNumber" id="Encrypted-btn">
+            Encrypt Your Message
+          </button>
+            </div>
+            <div class="binary-to-number"></div>
+        </article>
+
+        <article class="hidden_article binaryTranslator hidden">
+            <!-- hidden -->
+            <div class="binary-to">
+                <div class="binary_to hidden_div">
+                    <button class="modal-closeBtn">x</button>
+                    <form class="toBinaryForm" action="">
+                        <label class="block-1" for="binaryTo">Enter Binary</label><br />
+                        <input type="text" id="binaryTo" name="binaryTo" placeholder="Enter" /><br />
+                    </form>
+                    <button class="translateBtn">Translate</button>
+                    <div class="to-binary-output">
+                        <h1 class="block-1" class="to-binary-output-heading">Output:</h1>
+                        <p class="to-binary-output-p0 to-binary-output-p"></p>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article class="hidden_article numberTranslator hidden">
+            <!-- hidden -->
+            <div class="number-to">
+                <div class="number_to hidden_div">
+                    <button class="modal-closeBtn">x</button>
+                    <form class="toBinaryForm" action="">
+                        <label class="block-1" for="numberTo">Enter Number</label><br />
+                        <input type="text" id="numberTo" name="numberTo" placeholder="Enter" /><br />
+                    </form>
+                    <button class="translateBtn">Translate</button>
+                    <div class="to-binary-output">
+                        <h1 class="block-1" class="to-binary-output-heading">Output:</h1>
+                        <p class="to-binary-output-p1 to-binary-output-p"></p>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article class="hidden_article hexTranslator hidden">
+            <!-- hidden -->
+            <div class="hex-to">
+                <div class="hex_to hidden_div">
+                    <button class="modal-closeBtn">x</button>
+                    <form class="toBinaryForm" action="">
+                        <label class="block-1" for="hexTo">Enter Hex</label><br />
+                        <input type="text" id="hexTo" name="hexTo" placeholder="Enter" /><br />
+                    </form>
+                    <button class="translateBtn">Translate</button>
+                    <div class="to-binary-output">
+                        <h1 class="block-1" class="to-binary-output-heading">Output:</h1>
+                        <p class="to-binary-output-p2 to-binary-output-p"></p>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article class="hidden_article hexNumTranslator hidden">
+            <!-- hidden -->
+            <div class="hexNum-to">
+                <div class="hexNum_to hidden_div">
+                    <button class="modal-closeBtn">x</button>
+                    <form class="toBinaryForm" action="">
+                        <label class="block-1" for="hexNumTo">Enter Number</label><br />
+                        <input type="text" id="hexNumTo" name="hexNumTo" placeholder="Enter" /><br />
+                    </form>
+                    <button class="translateBtn">Translate</button>
+                    <div class="to-binary-output">
+                        <h1 class="block-1" class="to-binary-output-heading">Output:</h1>
+                        <p class="to-binary-output-p3 to-binary-output-p"></p>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article class="hidden_article messageTranslator hidden">
+            <!-- hidden -->
+            <div class="message-to">
+                <div class="message_to hidden_div message-hidden-div">
+                    <button class="modal-closeBtn">x</button>
+                    <form class="toBinaryForm" action="">
+                        <label class="block-1" for="messageTo">Enter Message
+                <span class="messageTo-span">(use 6 digit key)</span></label
+              ><br />
+              <textarea
+                id="messageTo"
+                name="messageTo"
+                placeholder="Enter"
+                rows="4"
+                cols="50"
+              ></textarea>
+              <div class="message-key">
+                <label
+                  class="block-1"
+                  id="message-key-label"
+                  for="message-key-input"
+                  >Key:</label
+                >
+
+                <input
+                  style="width: 55px"
+                  maxlength="6"
+                  id="message-key-input"
+                  name="message-key-input"
+                  placeholder="Key"
+                /><br />
+              </div>
+            </form>
+            <div class="translate-btns">
+              <button class="translateBtn">Translate</button>
+              <button class="translateBtn">Create</button>
+            </div>
+            <div class="to-binary-output">
+              <h1 class="block-1" class="to-binary-output-heading">Output:</h1>
+              <p class="to-binary-output-p4 to-binary-output-p"></p>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
